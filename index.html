@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AI gift shop demo</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header class="header">
+
+        <nav class="navbar">
+        	<a href="#"><i class="fas fa-duotone fa-gift fa-2xs"></i></a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="content">
+<section id="home" class="hidden">
+<div class="txt">
+<h1 class="headline">
+	<nav style="color:#3ba78b;">Wrap & Surprise by AI-</nav><span class="multiple-text"></span>
+</h1>
+<p class="description">Give details of the person you want the gift for as accurately as possible, and we recommend suitable and personalized gifts for your special one!</p>
+</div>
+<form>
+<div id="frm" class="frm">	
+	<div id="details">
+	<p>Type of present you would like to gift<span class="star">*</span></p>
+<select name="type" id="type" class="form-select" required>
+<option value="">--select a type--</option>
+<option value="Thoughtful">Thoughful</option>
+<option value="Sentimental">Sentimental</option>
+<option value="Entertaining">Entertaining</option>
+<option value="Funny">Funny</option>
+<option value="Romantic">Romantic</option>
+</select>
+
+<p>What is the occasion ?<span class="star">*</span></p>
+<select name="occasion" id="occasion" class="form-select" required>
+	<option value="">--select a ocassion--</option>
+	<option value="birthday">Birthday</option>
+	<option value="anniversary">Anniversary</option>
+	<option value="weddings">Weddings</option>
+	<option value="">Baby Shower</option>
+	<option value="academic">Academic achievements(eg.: Garaduation)</option>
+	<option value="christmas">Christmas</option>
+	<option value="valentine's day">Valentine's Day</option>
+	<option value="mothers's day">Mothers's Day</option>
+	<option value="fathers day">Father's Day</option>
+	<option value="easter">Easter</option>
+	<option value="thanksgiving">Thanksgiving</option>
+	<option value="halloween">Halloween</option>
+	<option value="new year">New Year's</option>
+	<option value="housewarming">Housewarming</option>
+	<option value="retirement">Retirement</option>
+	<option value="promotion">Promotion</option>
+	<option value="casually">Casually</option>
+	<option value="engagement">Engagement</option>
+	<option value="bridal shower">Bridal Shower</option>
+	<option value="baptism">Baptism</option>
+	<option value="diwali/navratri">Diwali/Navratri</option>
+	<option value="eid">Eid</option>
+	<option value="national holidays">National Holidays</option>
+	<option value="other">Other</option>
+</select>
+<p>Select an Age group<span class="star">*</span></p>
+<select name="age" value="age" class="form-select" required>
+	<option value="">--select an age group--</option>
+	<option value="0-10">0-10 years</option>
+	<option value="11-20">11-20 years</option>
+	<option value="21-30">21-30 years</option>
+	<option value="31-40">31-40 years</option>
+	<option value="41-50">41-50 years</option>
+	<option value="51-60">51-60 years</option>
+	<option value="61-70">61-70 years</option>
+	<option value="71+">71+ years</option>
+</select>
+<br>
+<p>What is the realtion with the person ?<span class="star">*</span></p>
+<select name="relationship" value="relationship" class="form-select" required>
+	<option value="">--select a relationship--</option>
+	<option value="mother">Mother</option>
+	<option value="father">Father</option>
+	<option value="sister">Sister</option>
+	<option value="brother">Brother</option>
+	<option value="aunt">Aunt</option>
+	<option value="uncle">Uncle</option>
+	<option value="cousin">Cousin</option>
+	<option value="grandmother">Grandmother</option>
+	<option value="grandfather">Grandfather</option>
+	<option value="daughter">Daughter</option>
+	<option value="son">Son</option>
+	<option value="niece">Niece</option>
+	<option value="nephew">Nephew</option>
+	<option value="girlfriend">Girlfriend</option>
+	<option value="boyfriend">Boyfriend</option>
+	<option value="best friend">Best friend</option>
+	<option value="fiancé">Fiancé</option>
+	<option value="spouse">Spouse</option>
+	<option value="collague">Collague</option>
+	<option value="classmate">Classmate</option>
+	<option value="mentor">Mentor</option>
+	<option value="boss">Boss</option>
+	<option value="employee">Employee</option>
+	<option value="neighbour">Neighbour</option>
+	<option value="roommate">Roommate</option>
+	<option value="other">Other</option>
+</select>
+</div>
+<div id="more">
+<p>Additional details</p>
+	<textarea class="msg" id="msg" placeholder="Let us know about the likes and dislikes of the person"></textarea>
+	<br>
+<button type="submit">Suggest</button>
+	</div>
+
+</div>	
+	
+</form>
+</section>
+<br>
+<section id="about" class="hidden">
+	<div class="features">
+	<div class="card">
+		<span class="fas fa-users-cog fa-5x" id="add-on"></span>
+		<br>
+<nav class="card-text">...Our recommendations are personalized
+ based on your description of the
+  person....</nav>
+	</div>
+	<div class="card">
+		<span class="fas fa-money-bill-wave fa-5x" id="add-on"></span>
+		<br>
+		<nav class="card-text">...Our recommendations are completely free of charge with no strings attached...</nav>
+	</div>
+	<div class="card">
+		<span class="fas fa-brain fa-5x" id="add-on"></span>
+		<br>
+		<nav class="card-text">...Our engine uses state of the art AI to recommend unique and suitable gifts...</nav>
+	</div>
+</div>
+<div class="details">
+<div class="column">
+                <h1>Gift ideas for all occasions</h1>
+                <p class="col">
+                    This is a personalized gift recommendation engine. We use cutting-edge technology to analyze
+                    the personal characteristics of the person you are shopping for and recommend unique and thoughtful gifts they will love and appreciate.
+                </p>
+            </div>
+            <div class="column">
+                <h1>Get unique gift ideas instantly</h1>
+                <p class="col">We know that finding the perfect gift can be difficult and time-consuming. That&#39;s why we created this website to help you find the best gifts for your loved ones quickly and easily. With our
+                    recommendations, you can be sure that you&#39;re giving a gift that they will love and appreciate.</p>
+            </div>
+ </div>
+</section>
+<br>
+
+<section id="contact" class="hidden">
+	<nav id="message">
+	<form action="" method="get">
+<h1 class="contact-title">
+	<span style="color:black;">Get in touch </span> <nav style="color:#3ba78ba6;padding-left: 1%;"> with us!
+	</h1>
+<div class="contain">
+	<div class="input-group">
+	<span class="input-group-text">
+		<span class="fas fa-user fa-2x" id="icon">
+		</span>
+	</span>
+	<input type="text" class="form-control" placeholder="Jhon Doe" id="name" required>
+</div>
+<div class="input-group">
+	<span class="input-group-text">
+		<span class="fas fa-envelope fa-2x" id="icon">
+		</span>
+	</span>
+	<input type="email" class="form-control" placeholder="abcxyz@gmail.com" id="email" required>
+</div>
+<nav class="contact-contact">
+<p>Message:<span class="star">*</span></p><textarea class="msg" id= "contact-msg" name="address" id="address" placeholder="Type you message here" required></textarea>
+</nav>
+<br>
+<button type="submit">Send</button>
+</nav>
+
+</div>
+</form>
+</section>
+
+<footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy;2023 by Samipa | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i> </a>
+        </div>
+    </footer>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
