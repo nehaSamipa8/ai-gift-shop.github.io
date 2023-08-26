@@ -26,7 +26,13 @@ ScrollReveal({
     delay: 200,
 });
 
-ScrollReveal().reveal('.headline, .heading, .card', { origin: 'top'});
-ScrollReveal().reveal('.frm,.details, .contact form', { origin: 'bottom'});
+ScrollReveal().reveal('.headline, .heading, ', { origin: 'top'});
+ScrollReveal().reveal('.frm, .contact form', { origin: 'bottom'});
 ScrollReveal().reveal(' .description, .menu', { origin: 'left'});
-// ScrollReveal().reveal('.input-group, .msg',.contact-title, { origin: 'right'});
+// ScrollReveal().reveal('.input-group' , { origin: 'right'});
+// ScrollReveal().reveal('.msg',.contact-title' , { origin: 'right'});
+
+function myFunction() {
+
+    document.getElementById("solution").innetHTML = "Book"+" "+"Chocolate";
+}
